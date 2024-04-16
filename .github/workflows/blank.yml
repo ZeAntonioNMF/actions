@@ -39,7 +39,11 @@ jobs:
   deploy-dev:
     # What job to wait for to finish
     needs: build
-    
+
+    # Which environment to run the job
+    environment:
+      name: dev
+      
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
